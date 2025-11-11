@@ -1,0 +1,108 @@
+/* Main components design */
+
+div.about-hero {
+    width: 100%;
+    height: 900px;
+
+    background-color: black;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+}
+img.about-img {
+    align-self: flex-end;
+}
+p.about-para {
+    align-self: center;
+    font-size: 25px;
+    text-align: center;
+    padding-right: 80px;
+}
+div.games-hero {
+    width: 100%;
+    
+    background-color: rgb(53, 53, 53);
+    padding: 200px 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+img.game-img {
+    width: 250px;
+    height: auto;
+}
+div.game-cont {
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 25px;
+
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+div.info-hero {
+    width: 100%;
+    height: 900px;
+    background-color: black;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 50px;
+}
+div.stat-cont {
+    width: 100%;
+    font-size: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+
+    padding: 0 50px;
+    color: white;
+}
+
+/* Hover design */
+
+div.game-cont:hover {
+    -webkit-box-shadow: 5px 5px 24px 18px rgba(0,0,0,0.71); 
+    box-shadow: 5px 5px 24px 18px rgba(0,0,0,0.71);
+    transform: 1s ease-in-out;
+}
+
+* {
+  box-sizing: content-box;
+}
+
+@media screen and (max-width: 1200px) {
+    div.about-hero {
+        flex-direction: column-reverse;
+        gap: 50px;
+        padding: 0 30px;
+    }
+    img.about-img {
+        align-self: center;
+        justify-self: flex-end;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    div.about-hero {
+        height: auto;
+        padding: 50px;
+    }
+    p.about-para {
+        font-size: 20px;
+    }
+}

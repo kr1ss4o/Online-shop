@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'SupercellMagic';
+  src: url('/fonts/supercell-magic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'SupercellMagic', sans-serif;
+}
+footer {
+    width: 100%;
+    background-color: rgb(53, 53, 53);
+    padding: 50px 0 0;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color: white;
+}
+div.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+a {
+    color: white;
+    font-weight: 700;
+}
+
+/* Carousel image */
+#carouselExampleCaptions {
+  height: 100dvh;
+}
+/* Ensure each carousel item matches the fixed height */
+#carouselExampleCaptions .carousel-item {
+  height: 100dvh;
+}
+/* Style the images to fill their container properly */
+#carouselExampleCaptions .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Crop edges if necessary, no stretching */
+}
+/* Optional: improve visibility of captions over bright images */
+#carouselExampleCaptions .carousel-caption {
+  background: rgba(0, 0, 0, 0.4); /* subtle dark overlay */
+  border-radius: 10px;
+  padding: 10px;
+}
+/* Make text scale down slightly on smaller screens */
+@media (max-width: 768px) {
+  #carouselExampleCaptions {
+    height: 600px;
+  }
+  #carouselExampleCaptions .carousel-item {
+    height: 600px;
+  }
+  #carouselExampleCaptions h5 {
+    font-size: 32px !important;
+  }
+}
