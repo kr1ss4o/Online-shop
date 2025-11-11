@@ -11,10 +11,10 @@ div.banner {
 }
 div.aboutus-hero {
     width: 100%;
-    padding: 120px 50px 0 50px;
+    padding: 150px 50px 0 50px;
 
     background-color: black;
-    color:#15e7ff;
+    color: white;
 
     display: flex;
     flex-wrap: wrap;

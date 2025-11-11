@@ -22,7 +22,8 @@ p.about-para {
 div.games-hero {
     width: 100%;
     
-    background-color: rgb(53, 53, 53);
+    background: RGB(36, 61, 108);
+    background: linear-gradient(90deg,rgba(36, 61, 108, 1) 0%, rgba(70, 35, 94, 1) 100%);
     padding: 200px 10px;
 
     display: flex;
@@ -48,29 +49,29 @@ div.game-cont {
 }
 div.info-hero {
     width: 100%;
-    height: 900px;
+    padding: 120px 30px;
+
     background-color: black;
     color: white;
 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+}
+img.info-img {
+    width: 600px;
+    height: auto;
+}
+div.info-cont {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
-    gap: 50px;
-}
-div.stat-cont {
-    width: 100%;
     font-size: 25px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 200px;
-
-    padding: 0 50px;
-    color: white;
 }
 
 /* Hover design */
@@ -78,7 +79,7 @@ div.stat-cont {
 div.game-cont:hover {
     -webkit-box-shadow: 5px 5px 24px 18px rgba(0,0,0,0.71); 
     box-shadow: 5px 5px 24px 18px rgba(0,0,0,0.71);
-    transform: 1s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 * {
@@ -90,6 +91,7 @@ div.game-cont:hover {
         flex-direction: column-reverse;
         gap: 50px;
         padding: 0 30px;
+        justify-content: flex-start;
     }
     img.about-img {
         align-self: center;
