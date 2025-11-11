@@ -2,12 +2,19 @@ div.banner {
     width: 100%;
     height: 100dvh;
 
-    background-image: url(https://www.allclash.com/wp-content/uploads/2024/08/brawl-stars-best-grom-build-scaled.jpg);
+    background-image: url(https://images.hdqwalls.com/wallpapers/hogs-clash-royale-5m.jpg);
     background-size: cover;
-    
+}
+div.banner-wrap {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    color: #a3e0ff;
 }
 div.aboutus-hero {
     width: 100%;
@@ -31,7 +38,7 @@ p.aboutus-para {
 }
 div.goals-hero {
     width: 100%;
-    background-color: #ffd012;
+    background-color: #60abd9;
 
     display: flex;
     flex-direction: column;
@@ -52,7 +59,7 @@ div.goals-cont {
 div.goal {
     padding: 20px;
     border-radius: 25px;
-    background-color: #f96f99;
+    background-color: #a3e0ff;
 
     display: flex;
     flex-direction: column;
